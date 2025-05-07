@@ -2242,6 +2242,7 @@ components:
               type: integer
               format: int64
               x-go-type: uint64
+              x-java-type: java.math.BigInteger
             score:
               type: string
             tokens_matched:
