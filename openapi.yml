@@ -2243,6 +2243,7 @@ components:
               format: int64
               x-go-type: uint64
               x-java-type: java.math.BigInteger
+              x-java-annotation: "@JsonDeserialize(using=BigIntegerDeserializer.class)"
             score:
               type: string
             tokens_matched:
