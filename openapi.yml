@@ -3373,6 +3373,14 @@ components:
             for them
           type: string
 
+        rerank_hybrid_matches:
+          type: boolean
+          description: >
+            When true, computes both text match and vector distance scores for all matches in hybrid search.
+            Documents found only through keyword search will get a vector distance score, and
+            documents found only through vector search will get a text match score.
+          default: false
+
         split_join_tokens:
           description: >
             Treat space as typo: search for q=basket ball if q=basketball is not found or vice-versa.
